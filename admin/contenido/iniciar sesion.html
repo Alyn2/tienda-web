@@ -1,0 +1,60 @@
+<?php
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acerca de nosotros</title>
+    <meta name="author" content="Tienda">
+    <meta name="Description" content="Ventas">
+    <meta name="keywords" content="ropa,blusas,pantalones,chaquetas,vestidos">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image-x/icon" href="../../img/Logotipo.png">
+    <link rel="stylesheet" type="text/css" href="../libreria/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../libreria/css/styles2.css">
+    <link rel="stylesheet" type="text/css" href="../libreria/css/styles5.css">
+</head>
+
+<body>
+    <header style="background-image: url(../../img/fondo-floral.jpg);background-size: cover; min-height: 20rem;">
+        <a href="../../principal.html">
+            <img src="../../img/Logotipo.png" alt="Logo" style="padding-top: 3rem;padding-left: 2rem;">
+        </a>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="../../principal.html">Inicio</a></li>
+            <li><a href="../../principal.html">Productos</a></li>
+            <li><a href="../../store/contenido/acerca_de.html">Nosotros</a></li>
+            <li><a href="../../store/contenido/buzonsug.html">Sugerencias</a></li>
+            <li><a href="iniciar sesion.html">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <center>
+        <form action="../controlador/controlador.php" method="POST">
+            
+            <div class="container">
+                <h1>INICIAR SESION</h1>
+                <label for="txtco">CORREO ELECTRONICO</label>
+                <br>
+                <input type="email" id="txtco" name="txtco">
+                <br><br>
+                <label for="password">CONTRASEÑA</label>
+                <br>
+                <input type="password" placeholder="" id="password" name="password">
+                <br><br>
+            </div>
+            <button type="button" onclick="registrate()"> REGISTRATE</button>
+            <button type="submit" onclick="iniciarsesion()" name="btnInicioCliente" value="ok"> INICIAR SESION</button>
+            <button type="button" onclick="bloquearusuario()"> BLOQUEAR USUARIO</button>
+            <button type="button" onclick="soyadministrador()"> SOY ADMINISTRADOR</button>
+            <script src="../libreria/js/script4.js"></script>
+            
+        </form>
+
+            
+    </center>
+</body>
+</html>

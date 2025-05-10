@@ -1,0 +1,35 @@
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.form-group input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #dfa4d2;
+  color: #6b0a63;
+  border: none;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}

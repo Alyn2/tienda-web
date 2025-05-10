@@ -1,0 +1,90 @@
+
+  body {
+   
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}
+
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  margin: 10px;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+  
+.form-group {
+    margin-bottom: 15px;
+}
+  
+label {
+    display: block;
+    font-weight: bold;
+}
+  
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+  
+small {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #777;
+}
+  
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color:black;
+}
+
+.bannerbutton {
+    width: 300px;
+    height: 150px;
+    background-image:url('../../../img/buzon.png');
+    background-size: cover;
+    cursor: pointer;
+  }

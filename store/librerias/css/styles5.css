@@ -1,0 +1,10 @@
+body {
+    background-image: url("../../../img/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+}

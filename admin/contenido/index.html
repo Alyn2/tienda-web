@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Acerca de nosotros</title>
+    <meta name="author" content="Tienda">
+    <meta name="Description" content="Ventas">
+    <meta name="keywords" content="ropa,blusas,pantalones,chaquetas,vestidos">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image-x/icon" href="../../img/Logotipo.png">
+    <link rel="stylesheet" type="text/css" href="../libreria/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../libreria/css/styles2.css">
+    <link rel="stylesheet" type="text/css" href="../libreria/css/styles4.css">
+</head>
+
+<body>
+    <header style="background-image: url(../../img/fondo-floral.jpg);background-size: cover; min-height: 20rem;">
+        <a href="../../principal.html">
+            <img src="../../img/Logotipo.png" alt="Logo" style="padding-top: 3rem;padding-left: 2rem;">
+        </a>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="../../principal.html">Inicio</a></li>
+            <li><a href="../../principal.html">Productos</a></li>
+            <li><a href="../../store/contenido/acerca_de.html">Nosotros</a></li>
+            <li><a href="../../store/contenido/buzonsug.html">Sugerencias</a></li>
+            <li><a href="iniciar sesion.html">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Guardar Artículo</h2>
+
+        <form action="../controlador/controlador.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio">
+            </div>
+            <div class="form-group">
+                <label for="image">Foto:</label>
+                <input type="file" id="image" name="image">
+                <small>La foto se ajustará al tamaño 500x600 píxeles.</small>
+            </div>
+            <div class="form-group">
+                <label for="colores">Colores:</label>
+                <input type="text" id="colores" name="colores">
+                <small>Separar los colores con comas (ejemplo: rojo, azul, verde).</small>
+            </div>
+            <div class="form-group">
+                <label for="tallas">Tallas:</label>
+                <input type="text" id="tallas" name="tallas">
+                <small>Separar las tallas con comas (ejemplo: S, M, L).</small>
+            </div>
+            <div class="form-group">
+                <label for="metodos_pago">Métodos de Pago:</label>
+                <input type="text" id="metodos_pago" name="metodos_pago">
+                <small>Separar los métodos de pago con comas (ejemplo: Tarjeta de crédito, PayPal).</small>
+            </div>
+            <div class="form-group">
+                <label for="codigo">Código del artículo:</label>
+                <input type="text" id="codigo" name="codigo">
+                <small>El código es interno y no se muestra públicamente.</small>
+            </div>
+
+            <div class="form-group">
+                <label for="categoria">Categoría del artículo:</label>
+                <select id="categoria" name="categoria">
+                    <option value="vestidos">Vestidos</option>
+                    <option value="blusas">Blusas</option>
+                    <option value="pantalones">Pantalones</option>
+                    <option value="chaquetas">Chaquetas</option>
+                </select>
+                <br>
+            </div>
+            <button type="submit" onclick="agregarArticulo()" name="btnArticulo" value="ok"> Agregar</button>
+
+            <script src="../libreria/js/script1.js"></script>
+        </form>
+
+        
+
+</body>
+
+</html>
